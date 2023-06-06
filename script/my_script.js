@@ -27,8 +27,13 @@ createApp({
     },
     methods: {
         addNewTaskToArray(taskToAdd, myArray) {
-            myArray.push(taskToAdd);
+            myTaskObject = {
+                text: taskToAdd,
+                done: false
+            };
+            myArray.push(myTaskObject);
             console.log(myArray);
+            taskToAdd = "";
         }
     }
 }).mount('#app') 
