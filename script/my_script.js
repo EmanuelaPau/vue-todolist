@@ -32,7 +32,7 @@ createApp({
                 done: false
             };
             myArray.push(myTaskObject);
-            this.taskToAdd = '';
+            this.myNewTask = '';
         }
     }
 }).mount('#app') 
