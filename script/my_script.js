@@ -21,10 +21,14 @@ createApp({
     data() {
         return {
             message: 'Hello Vue!',
-            myToDoArray: []
+            myToDoArray: [],
+            myNewTask: "",
         }
     },
     methods: {
-        myTest() { console.log("this works!"); }
+        addNewTaskToArray(taskToAdd, myArray) {
+            myArray.push(taskToAdd);
+            console.log(myArray);
+        }
     }
 }).mount('#app') 
