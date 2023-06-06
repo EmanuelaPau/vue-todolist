@@ -25,6 +25,14 @@ createApp({
                 {
                     text: 'aggiungi lista',
                     done: false
+                },
+                {
+                    text: 'collega lista',
+                    done: false
+                },
+                {
+                    text: 'copia lista',
+                    done: false
                 }
             ],
             myNewTask: "",
