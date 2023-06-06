@@ -25,5 +25,6 @@ createApp({
         }
     },
     methods: {
+        myTest() { console.log("this works!"); }
     }
 }).mount('#app') 
