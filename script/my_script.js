@@ -32,8 +32,7 @@ createApp({
                 done: false
             };
             myArray.push(myTaskObject);
-            console.log(myArray);
-            taskToAdd = "";
+            this.taskToAdd = '';
         }
     }
 }).mount('#app') 
