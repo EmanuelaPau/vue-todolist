@@ -46,6 +46,14 @@ createApp({
             };
             myArray.push(myTaskObject);
             this.myNewTask = '';
+        },
+
+        removeTaskToArray(taskIndex, myArray) {
+            if (taskIndex >= myArray.lenght || taskIndex < 0) {
+                console.warn('there are not tasks to delete in this position')
+            } else {
+                myArray.splice(taskIndex, 1);
+            }
         }
     }
 }).mount('#app') 
