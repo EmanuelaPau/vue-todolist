@@ -21,6 +21,7 @@ createApp({
     data() {
         return {
             message: 'Hello Vue!',
+            myToDoArray: []
         }
     },
     methods: {
