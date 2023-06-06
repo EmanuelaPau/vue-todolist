@@ -21,7 +21,30 @@
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         
         <div id="app">
-           
+            <div class="my_container">
+                <h1 class="my_title">My Toboolist</h1>
+
+                <div class="card_container">
+                    <h2 class="mb-3">Today</h2>
+                    <!-- Input -->
+                    <div class="my_input-form">
+                        <label class="sr-only" for="inlineFormInputGroupTask">Task</label>
+                        <div class="input-group mb-3 mr-sm-2">
+         
+                          <input type="text" class="form-control" id="inlineFormInputGroupTask" placeholder="Add new Task">
+                          <button type="button" class="btn btn-primary"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <!-- TASK LIST -->
+                    <div class="my_task_element d-flex justify-content-between">
+                        <input class="form-check-input me-3" type="checkbox" value="" id="flexCheckDefault">
+                        <span class="my_task-text">Testo di prova task</span>
+                        <button type="button" class="btn"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    
+
+                </div>
+            </div>
         </div>
         <!-- JS  -->
         <script type="text/javascript" src="script/my_script.js"></script>
