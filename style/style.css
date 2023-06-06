@@ -37,3 +37,7 @@
 .my_task-text {
     width: 90%;
 }
+
+.my_barred-text {
+    text-decoration: line-through;
+}

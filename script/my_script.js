@@ -32,6 +32,7 @@ createApp({
                 }
             ],
             myNewTask: "",
+            myBarredText: ''
         }
     },
     methods: {
@@ -50,6 +51,15 @@ createApp({
             } else {
                 myArray.splice(taskIndex, 1);
             }
+        },
+
+        addBarredText(myArray, myIndex) {
+            if (myArray[myIndex].done === true) {
+                this.myBarredText = 'my_barred-text';
+            } else {
+                this.myBarredText = '';
+            }
+            return this.myBarredText;
         }
     }
 }).mount('#app') 
