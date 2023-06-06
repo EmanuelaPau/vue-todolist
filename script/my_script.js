@@ -60,6 +60,14 @@ createApp({
                 this.myBarredText = '';
             }
             return this.myBarredText;
+        },
+
+        changeTaskState(myArray, myIndex) {
+            if (myArray[myIndex].done === false) {
+                myArray[myIndex].done = true;
+            } else {
+                myArray[myIndex].done = false;
+            }
         }
     }
 }).mount('#app') 

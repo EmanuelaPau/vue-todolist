@@ -37,9 +37,9 @@
                     </div>
                     <!-- TASK LIST -->
                     <div class="my_task_element d-flex justify-content-between align-items-center" v-for="(tasks, index) in myToDoArray">
-                        <input class="form-check-input me-3" type="checkbox" value="false" id="flexCheckDefault" :checked="myToDoArray[index].done">
+                        <input class="form-check-input me-3" type="checkbox" value="false" id="flexCheckDefault" :checked="myToDoArray[index].done" @click="changeTaskState(myToDoArray,index)">
                         <span class="my_task-text m-0" :class="addBarredText(myToDoArray, index)">{{myToDoArray[index].text}}</span>
-                        <button type="button" class="btn"><i class="fa-solid fa-xmark" @click=" removeTaskToArray(index, myToDoArray)"></i></button>
+                        <button type="button" class="btn"><i class="fa-solid fa-xmark" @click="removeTaskToArray(index, myToDoArray)"></i></button>
                     </div>
                     
 
