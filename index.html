@@ -29,10 +29,10 @@
                     <!-- Input -->
                     <div class="my_input-form">
                         <label class="sr-only" for="inlineFormInputGroupTask">Task</label>
-                        <div class="input-group mb-3 mr-sm-2">
+                        <div class="input-group mb-3 mr-sm-2 ">
          
-                          <input type="text" class="form-control" id="inlineFormInputGroupTask" placeholder="Add new Task" v-model="myNewTask">
-                          <button type="button" class="btn btn-primary" @click=" addNewTaskToArray(myNewTask, myToDoArray)"><i class="fa-solid fa-plus" ></i></button>
+                          <input type="text" class="form-control" @keyup.enter="addNewTaskToArray(myNewTask, myToDoArray)" id="inlineFormInputGroupTask" placeholder="Add new Task" v-model="myNewTask">
+                          <button type="button" class="btn btn-primary" @click=" addNewTaskToArray(myNewTask, myToDoArray)" ><i class="fa-solid fa-plus" ></i></button>
                         </div>
                     </div>
                     <!-- TASK LIST -->
