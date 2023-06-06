@@ -21,7 +21,12 @@ createApp({
     data() {
         return {
             message: 'Hello Vue!',
-            myToDoArray: [],
+            myToDoArray: [
+                {
+                    text: 'aggiungi lista',
+                    done: false
+                }
+            ],
             myNewTask: "",
         }
     },
